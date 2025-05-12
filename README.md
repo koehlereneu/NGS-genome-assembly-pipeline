@@ -3,7 +3,17 @@
 This project implements a short-read genome assembly pipeline using publicly available Illumina paired-end reads of *Escherichia coli*. It automates key steps from data retrieval to assembly quality evaluation using bioinformatics tools.
 
 ## Project Structure
-<pre> ```text NGS_pipeline/ ├── Scripts/ # Bash scripts for each pipeline step ├── data/ # Raw and trimmed FASTQ files │ ├── raw/ │ └── trimmed/ ├── results/ # SPAdes assembly output and QUAST reports │ ├── ecoli_assembly/ │ └── quast_report/ └── README.md # This file ``` </pre>
+```text
+NGS_pipeline/
+├── Scripts/              # Bash scripts for each pipeline step
+├── data/                 # Raw and trimmed FASTQ files
+│   ├── raw/
+│   └── trimmed/
+├── results/              # SPAdes assembly output and QUAST reports
+│   ├── ecoli_assembly/
+│   └── quast_report/
+└── README.md             # This file
+```
 
 ## Workflow Overview
 1. **Download NGS reads** from NCBI SRA using `fasterq-dump`
